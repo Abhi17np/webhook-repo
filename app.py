@@ -30,6 +30,7 @@ def webhook():
 
     elif event == 'pull_request':
         action = data['action']
+        print(f"📌 Pull request action: {action}")
         author = data['pull_request']['user']['login']
         from_branch = data['pull_request']['head']['ref']
         to_branch = data['pull_request']['base']['ref']
