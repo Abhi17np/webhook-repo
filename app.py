@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 # MongoDB connection
 app.config["MONGO_URI"] = "mongodb+srv://abhi:abhi1234@cluster01.hvhrhfb.mongodb.net/github_events?retryWrites=true&w=majority&appName=Cluster01"
+
 mongo = PyMongo(app)
 
 @app.route('/')
