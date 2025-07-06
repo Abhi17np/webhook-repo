@@ -6,7 +6,7 @@ import os
 
 app = Flask(__name__)
 
-# ✅ Use your correct MongoDB URI (update password if needed)
+# Use your correct MongoDB URI 
 app.config["MONGO_URI"] = "mongodb+srv://abhi:abhi1234@cluster01.hvhrhfb.mongodb.net/github_events?retryWrites=true&w=majority&appName=Cluster01"
 mongo = PyMongo(app)
 
@@ -30,7 +30,7 @@ def webhook():
 
     elif event == 'pull_request':
         action = data['action']
-        print(f"📌 Pull request action: {action}")
+        print(f" Pull request action: {action}")
         author = data['pull_request']['user']['login']
         from_branch = data['pull_request']['head']['ref']
         to_branch = data['pull_request']['base']['ref']
@@ -41,13 +41,13 @@ def webhook():
             message = f'"{author}" merged branch "{from_branch}" to "{to_branch}" on {formatted_time}'
 
     if message:
-        print("✅ Webhook received:", message)
+        print(" Webhook received:", message)
         mongo.db.events.insert_one({
             "message": message,
             "timestamp": timestamp
         })
     else:
-        print("⚠️ Webhook received but no valid event matched.")
+        print(" Webhook received but no valid event matched.")
 
     return jsonify({'status': 'received'}), 200
 
@@ -62,10 +62,10 @@ def events():
             })
         return jsonify(output)
     except Exception as e:
-        print("❌ Error in /events:", str(e))
+        print(" Error in /events:", str(e))
         return jsonify([])
 
-# ✅ Render requires host 0.0.0.0 and dynamic port
+# Render requires host 0.0.0.0 and dynamic port
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
