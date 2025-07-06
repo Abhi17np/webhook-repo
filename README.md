@@ -17,7 +17,7 @@ A full-stack developer assessment project to receive GitHub webhook events and d
 
 - **Backend:** Flask (Python)
 - **Database:** MongoDB Atlas (Cloud)
-- **Frontend:** HTML + JavaScript (vanilla)
+- **Frontend:** HTML + JS
 - **Deployment:** Render.com
 - **Version Control:** Git + GitHub
 
