@@ -29,5 +29,4 @@ A full-stack developer assessment project to receive GitHub webhook events and d
 
 ---
 
-## Example Output (Displayed on Web Page)
 
