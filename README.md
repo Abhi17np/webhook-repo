@@ -1,24 +1,28 @@
-#  Dev Assessment
-
-A full-stack developer assessment project to receive GitHub webhook events and display them in real-time using Flask, MongoDB, and a simple frontend.
 
 ---
 
-##  Project Highlights
+## Repositories
 
-- Receives webhook events from GitHub (push, pull_request ,merge)
-- Stores messages in **MongoDB Atlas**
-- Displays formatted messages in a UI that auto-refreshes every 15 seconds
-- Deployed live on **Render**
-
----
-
-##  Technologies used
-
-- **Backend:** Flask (Python)
-- **Database:** MongoDB Atlas (Cloud)
-- **Frontend:** HTML + JS
-- **Deployment:** Render.com
-- **Version Control:** Git + GitHub
+| Name | Purpose |
+|------|---------|
+[webhook-repo](https://github.com/Abhi17np/webhook-repo) | Flask backend with MongoDB and frontend UI
+[action-repo](https://github.com/Abhi17np/action-repo) | Dummy GitHub repo 
 
 ---
+
+##  How to Run Locally:
+
+git clone https://github.com/Abhi17np/webhook-repo.git
+cd webhook-repo
+
+# Create and activate virtual environment
+python -m venv venv
+venv\Scripts\activate     - for Windows
+#### OR
+source venv/bin/activate  - for macOS/Linux
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+python app.py
