@@ -6,7 +6,7 @@ A full-stack developer assessment project to receive GitHub webhook events and d
 
 ##  Project Highlights
 
-- Receives webhook events from GitHub (`push`, `pull_request`, `merge`)
+- Receives webhook events from GitHub (push, pull_request ,merge)
 - Stores messages in **MongoDB Atlas**
 - Displays formatted messages in a UI that auto-refreshes every 15 seconds
 - Deployed live on **Render**
