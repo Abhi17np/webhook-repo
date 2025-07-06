@@ -13,7 +13,7 @@ A full-stack developer assessment project to receive GitHub webhook events and d
 
 ---
 
-##  Tech Stack
+##  Technologies used
 
 - **Backend:** Flask (Python)
 - **Database:** MongoDB Atlas (Cloud)
@@ -22,11 +22,3 @@ A full-stack developer assessment project to receive GitHub webhook events and d
 - **Version Control:** Git + GitHub
 
 ---
-
-## Live Demo
-
- [View Live App](https://webhook-repo-z351.onrender.com)
-
----
-
-
